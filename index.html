@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Demo Portfolio </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+        }
+        .hero img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .about img {
+            width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        .projects {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+        }
+        .project img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Demo Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+                <h2>Welcome to My Portfolio</h2>
+        <p>This is a demo portfolio showcasing some sample projects and details.</p>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>I am a student working on this demo portfolio project for my college assignment. This website is a template with sample content and images used for presentation purposes only.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                    <h3>Project One</h3>
+                <p>A sample project to display layout and design elements.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>This project is included purely for demonstration purposes.</p>
+            </div>
+            <div class="project">
+                <h3>Project Three</h3>
+                <p>A layout showcasing how multiple projects can be presented together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025  - Demo Portfolio
+    </footer>
+
+</body>
+</html>
